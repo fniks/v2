@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-03-22 15:52:57
+# 创建时间：2024-03-25 09:32:45
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：15
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,9 +86,15 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"74bc5979-VMess_WS","type":"vmess","server":"racknerd.fniks213.top","port":443,"cipher":"aes-128-gcm","uuid":"74bc5979-32d4-4be9-9efa-4ab0dab734c2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/emhnvws","headers":{"host":"racknerd.fniks213.top"}}}
-  - {"name":"74bc5979-Trojan_gRPC","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"74bc5979-32d4-4be9-9efa-4ab0dab734c2","sni":"racknerd.fniks213.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"74bc5979-singbox_hysteria2","type":"hysteria2","server":"racknerd.fniks213.top","port":31736,"password":"74bc5979-32d4-4be9-9efa-4ab0dab734c2","sni":"racknerd.fniks213.top","skip-cert-verify":true}
+  - {"name":"98d50c9b-vless_reality_grpc","type":"vless","server":"racknerd.fniks213.top","port":443,"udp":true,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"NGsDf9yrx8T9ZFXDB24x13PoMTZHaMX4yBY0STxLJVo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-vless_reality_vision","type":"vless","server":"racknerd.fniks213.top","port":443,"udp":true,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"NGsDf9yrx8T9ZFXDB24x13PoMTZHaMX4yBY0STxLJVo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-Trojan_gRPC","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"uymhtrojangrpc"},"alpn":["h2"]}
+  - {"name":"racknerd.fniks213.top_Trojan","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":true,"alpn":["http/1.1"]}
+  - {"name":"98d50c9b-VMess_WS","type":"vmess","server":"racknerd.fniks213.top","port":443,"cipher":"auto","uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"racknerd.fniks213.top","network":"ws","ws-opts":{"path":"/uymhvws","headers":{"host":"racknerd.fniks213.top"}}}
+  - {"name":"98d50c9b-vless_grpc","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","network":"grpc","grpc-opts":{"grpc-service-name":"uymhgrpc"},"alpn":["h2"],"client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-VLESS_WS","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","network":"ws","ws-opts":{"path":"/uymhws","headers":{"host":"racknerd.fniks213.top"}},"client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-VLESS_TCP/TLS_Vision","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-singbox_hysteria2","type":"hysteria2","server":"racknerd.fniks213.top","port":28501,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":false,"alpn":["h3"]}
   - {"name":"e8cdb8ab-vless_reality_vision","type":"vless","server":"justhost.fniks213.top","port":443,"udp":true,"uuid":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","tls":true,"servername":"justhost.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"HilvEUrGDW3yETnkX_cznlI1ZLbOlygHwO12vCDRdmo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"e8cdb8ab-singbox_hysteria2","type":"hysteria2","server":"justhost.fniks213.top","port":41300,"password":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","sni":"justhost.fniks213.top","skip-cert-verify":true}
   - {"name":"e8cdb8ab-Trojan_gRPC","type":"trojan","server":"justhost.fniks213.top","port":443,"udp":true,"password":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","sni":"justhost.fniks213.top","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"ndhhtrojangrpc"}}
@@ -101,9 +107,15 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
@@ -116,9 +128,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
@@ -131,9 +149,15 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
@@ -145,9 +169,15 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
@@ -159,9 +189,15 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
@@ -173,9 +209,15 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
@@ -204,9 +246,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 74bc5979-VMess_WS
-      - 74bc5979-Trojan_gRPC
-      - 74bc5979-singbox_hysteria2
+      - 98d50c9b-vless_reality_grpc
+      - 98d50c9b-vless_reality_vision
+      - 98d50c9b-Trojan_gRPC
+      - racknerd.fniks213.top_Trojan
+      - 98d50c9b-VMess_WS
+      - 98d50c9b-vless_grpc
+      - 98d50c9b-VLESS_WS
+      - 98d50c9b-VLESS_TCP/TLS_Vision
+      - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
       - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
