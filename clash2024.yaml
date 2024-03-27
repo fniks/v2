@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-03-25 09:32:45
+# 创建时间：2024-03-27 10:13:44
 # 使用模版：V2RaySE 默认模版
-# 节点数量：15
+# 节点数量：16
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,21 +86,22 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"98d50c9b-vless_reality_grpc","type":"vless","server":"racknerd.fniks213.top","port":443,"udp":true,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"NGsDf9yrx8T9ZFXDB24x13PoMTZHaMX4yBY0STxLJVo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-vless_reality_grpc","type":"vless","server":"racknerd.fniks213.top","port":443,"udp":true,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"NGsDf9yrx8T9ZFXDB24x13PoMTZHaMX4yBY0STxLJVo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"98d50c9b-vless_reality_vision","type":"vless","server":"racknerd.fniks213.top","port":443,"udp":true,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"NGsDf9yrx8T9ZFXDB24x13PoMTZHaMX4yBY0STxLJVo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"98d50c9b-Trojan_gRPC","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"uymhtrojangrpc"},"alpn":["h2"]}
-  - {"name":"racknerd.fniks213.top_Trojan","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":true,"alpn":["http/1.1"]}
-  - {"name":"98d50c9b-VMess_WS","type":"vmess","server":"racknerd.fniks213.top","port":443,"cipher":"auto","uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"racknerd.fniks213.top","network":"ws","ws-opts":{"path":"/uymhvws","headers":{"host":"racknerd.fniks213.top"}}}
-  - {"name":"98d50c9b-vless_grpc","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","network":"grpc","grpc-opts":{"grpc-service-name":"uymhgrpc"},"alpn":["h2"],"client-fingerprint":"chrome"}
-  - {"name":"98d50c9b-VLESS_WS","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","network":"ws","ws-opts":{"path":"/uymhws","headers":{"host":"racknerd.fniks213.top"}},"client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-Trojan_gRPC","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"uymhtrojangrpc"}}
+  - {"name":"racknerd.fniks213.top_Trojan","type":"trojan","server":"racknerd.fniks213.top","port":443,"udp":true,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"98d50c9b-VMess_WS","type":"vmess","server":"racknerd.fniks213.top","port":443,"cipher":"auto","uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/uymhvws","headers":{"host":"racknerd.fniks213.top"}}}
+  - {"name":"98d50c9b-vless_grpc","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","network":"grpc","client-fingerprint":"chrome"}
+  - {"name":"98d50c9b-VLESS_WS","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","network":"ws","ws-opts":{"path":"/uymhws"},"client-fingerprint":"chrome"}
   - {"name":"98d50c9b-VLESS_TCP/TLS_Vision","type":"vless","server":"racknerd.fniks213.top","port":443,"uuid":"98d50c9b-5f7b-49ab-802c-c907261598e8","tls":true,"servername":"racknerd.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"98d50c9b-singbox_hysteria2","type":"hysteria2","server":"racknerd.fniks213.top","port":28501,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":false,"alpn":["h3"]}
+  - {"name":"98d50c9b-singbox_hysteria2","type":"hysteria2","server":"racknerd.fniks213.top","port":28501,"password":"98d50c9b-5f7b-49ab-802c-c907261598e8","sni":"racknerd.fniks213.top","skip-cert-verify":true}
   - {"name":"e8cdb8ab-vless_reality_vision","type":"vless","server":"justhost.fniks213.top","port":443,"udp":true,"uuid":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","tls":true,"servername":"justhost.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"HilvEUrGDW3yETnkX_cznlI1ZLbOlygHwO12vCDRdmo","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"e8cdb8ab-singbox_hysteria2","type":"hysteria2","server":"justhost.fniks213.top","port":41300,"password":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","sni":"justhost.fniks213.top","skip-cert-verify":true}
   - {"name":"e8cdb8ab-Trojan_gRPC","type":"trojan","server":"justhost.fniks213.top","port":443,"udp":true,"password":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","sni":"justhost.fniks213.top","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"ndhhtrojangrpc"}}
   - {"name":"justhost.fniks213.top_Trojan","type":"trojan","server":"justhost.fniks213.top","port":443,"udp":true,"password":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","sni":"justhost.fniks213.top","skip-cert-verify":true,"network":"tcp"}
   - {"name":"e8cdb8ab-VMess_WS","type":"vmess","server":"justhost.fniks213.top","port":443,"cipher":"auto","uuid":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ndhhvws","headers":{"host":"justhost.fniks213.top"}}}
   - {"name":"e8cdb8ab-VLESS_TCP/TLS_Vision","type":"vless","server":"justhost.fniks213.top","port":443,"uuid":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","tls":true,"servername":"justhost.fniks213.top","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"e8cdb8ab-singbox_hysteria2","type":"hysteria2","server":"justhost.fniks213.top","port":41300,"password":"e8cdb8ab-4518-4c15-bb9f-2fab5f61fca8","sni":"justhost.fniks213.top","skip-cert-verify":true}
+  - {"name":"Hysteria2-misaka","type":"hysteria2","server":"194.135.104.198","port":34535,"password":"80f90881","sni":"www.bing.com","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -117,11 +118,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,11 +140,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -159,11 +162,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
   - name: 📲 电报信息
     type: select
     proxies:
@@ -179,11 +183,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -199,11 +204,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -219,11 +225,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -256,11 +263,12 @@ proxy-groups:
       - 98d50c9b-VLESS_TCP/TLS_Vision
       - 98d50c9b-singbox_hysteria2
       - e8cdb8ab-vless_reality_vision
-      - e8cdb8ab-singbox_hysteria2
       - e8cdb8ab-Trojan_gRPC
       - justhost.fniks213.top_Trojan
       - e8cdb8ab-VMess_WS
       - e8cdb8ab-VLESS_TCP/TLS_Vision
+      - e8cdb8ab-singbox_hysteria2
+      - Hysteria2-misaka
 
 rules:
 # 本地/局域网地址
